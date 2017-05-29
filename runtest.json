@@ -1,0 +1,25 @@
+{
+  "AttachStdin": false,
+  "AttachStdout": false,
+  "AttachStderr": false,
+  "Tty": false,
+  "OpenStdin": false,
+  "StdinOnce": false,
+  "Env": [
+    "FOO=bar",
+    "BAZ=quux"
+  ],
+  "Cmd": [
+    "sleep 100"
+  ],
+  "Image": "ubuntu",
+  "HostConfig": {
+    "Binds": [
+      "/tmp:/tmp"
+    ],
+    "Memory": 100000000,
+    "CpuPeriod": 100000,
+    "CpuQuota": 50000,
+    "ShmSize": 67108864
+  }
+}
